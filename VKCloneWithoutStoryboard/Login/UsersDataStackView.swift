@@ -12,26 +12,25 @@ class UsersDataStackView: UIStackView {
     
     let nameLabel = UILabel()
     let nameTextField = UITextField()
-    
-    
-    var textLabel: String
-    var placeholder: String
-    
+   
     //MARK: - Initialization
     
     init(nameLabel: String, placeholder: String) {
-        self.textLabel = nameLabel
-        self.placeholder = placeholder
         super.init(frame: .zero)
         
-        setupUserPasswordStackView()
-        setupUserNameLabel()
-        setupUserNameTextField()
+        axis = NSLayoutConstraint.Axis.vertical
+        alignment = .center
+        spacing = 10
+        
+        setupNameLabel(with: nameLabel)
+        setupNameTextField(with: placeholder )
     }
     
     required init(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    //MARK: - Constraints
     
     override func updateConstraints() {
         super.updateConstraints()
@@ -49,28 +48,25 @@ class UsersDataStackView: UIStackView {
         axis = NSLayoutConstraint.Axis.vertical
         alignment = .center
         spacing = 10
-        
     }
     
-    private func setupUserNameLabel() {
-        nameLabel.text = textLabel
+    private func setupNameLabel(with name: String) {
+        nameLabel.text = name
         nameLabel.font = UIFont.systemFont(ofSize: 20)
         nameLabel.textColor = UIColor(named: "LoginLabelsColor")
         
         addArrangedSubview(nameLabel)
     }
     
-    private func setupUserNameTextField() {
+    private func setupNameTextField(with placeholder: String) {
         nameTextField.placeholder = placeholder
         nameTextField.backgroundColor = UIColor(named: "LoginLabelsColor")
         nameTextField.borderStyle = .roundedRect
-        
         nameTextField.translatesAutoresizingMaskIntoConstraints = false
         
         addArrangedSubview(nameTextField)
         
         setNeedsUpdateConstraints()
-        
     }
     
 }
