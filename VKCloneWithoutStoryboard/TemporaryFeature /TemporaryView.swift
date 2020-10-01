@@ -22,6 +22,14 @@ class TemporaryView: UIView {
     
     init() {
         super.init(frame: .zero)
+        
+        addSubview(mainStackView)
+        mainStackView.addArrangedSubview(searchStackView)
+        searchStackView.addArrangedSubview(searchTextField)
+        searchStackView.addArrangedSubview(searchGroupsButton)
+        mainStackView.addArrangedSubview(friendsButton)
+        mainStackView.addArrangedSubview(photosButton)
+        mainStackView.addArrangedSubview(groupsButton)
     }
     
     required init?(coder: NSCoder) {

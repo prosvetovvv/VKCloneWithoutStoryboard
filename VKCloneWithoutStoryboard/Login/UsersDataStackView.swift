@@ -43,13 +43,7 @@ class UsersDataStackView: UIStackView {
     
     
     //MARK: - Settings
-    
-    private func setupUserPasswordStackView() {
-        axis = NSLayoutConstraint.Axis.vertical
-        alignment = .center
-        spacing = 10
-    }
-    
+        
     private func setupNameLabel(with name: String) {
         nameLabel.text = name
         nameLabel.font = UIFont.systemFont(ofSize: 20)

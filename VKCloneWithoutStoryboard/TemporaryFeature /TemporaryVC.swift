@@ -27,10 +27,6 @@ class TemporaryVC: UIViewController {
         setupGroupsButton()
         setupSearchTextField()
         setupSearchGroupsButton()
-        
-        temporaryView.addSubview(temporaryView.mainStackView)
-        
-        temporaryView.setNeedsUpdateConstraints()
     }
 }
 
@@ -54,8 +50,6 @@ extension TemporaryVC {
         temporaryView.friendsButton.layer.cornerRadius = 25
         temporaryView.friendsButton.translatesAutoresizingMaskIntoConstraints = false
         
-        temporaryView.mainStackView.addArrangedSubview(temporaryView.friendsButton)
-        
         temporaryView.friendsButton.addTarget(self, action: #selector(friendsButtonTapped), for: .touchUpInside)
         
         temporaryView.setNeedsUpdateConstraints()
@@ -69,8 +63,6 @@ extension TemporaryVC {
         temporaryView.photosButton.layer.cornerRadius = 25
         temporaryView.photosButton.translatesAutoresizingMaskIntoConstraints = false
         
-        temporaryView.mainStackView.addArrangedSubview(temporaryView.photosButton)
-        
         temporaryView.photosButton.addTarget(self, action: #selector(photosButtonTapped), for: .touchUpInside)
         
         temporaryView.setNeedsUpdateConstraints()
@@ -82,8 +74,6 @@ extension TemporaryVC {
         temporaryView.groupsButton.setTitleColor(.black, for: .normal)
         temporaryView.groupsButton.layer.cornerRadius = 25
         temporaryView.groupsButton.translatesAutoresizingMaskIntoConstraints = false
-        
-        temporaryView.mainStackView.addArrangedSubview(temporaryView.groupsButton)
         
         temporaryView.groupsButton.addTarget(self, action: #selector(groupsButtonTapped), for: .touchUpInside)
         
@@ -115,8 +105,6 @@ extension TemporaryVC {
         temporaryView.searchStackView.spacing = 20
         temporaryView.mainStackView.translatesAutoresizingMaskIntoConstraints = false
         
-        temporaryView.mainStackView.addArrangedSubview(temporaryView.searchStackView)
-        
         temporaryView.setNeedsUpdateConstraints()
     }
     
@@ -133,8 +121,6 @@ extension TemporaryVC {
         
         temporaryView.searchGroupsButton.addTarget(self, action: #selector(searchGroupsButtonTapped), for: .touchUpInside)
         
-        temporaryView.searchStackView.addArrangedSubview(temporaryView.searchGroupsButton)
-        
         temporaryView.setNeedsUpdateConstraints()
     }
     
@@ -144,13 +130,10 @@ extension TemporaryVC {
         temporaryView.searchTextField.layer.backgroundColor = UIColor.white.cgColor
         temporaryView.searchTextField.translatesAutoresizingMaskIntoConstraints = false
         
-        temporaryView.searchStackView.addArrangedSubview(temporaryView.searchTextField)
-        
         temporaryView.setNeedsUpdateConstraints()
     }
     
     @objc func searchGroupsButtonTapped() {
         vkManager.fetchSearchedGroups(with: temporaryView.searchTextField.text!)
     }
-    
 }
