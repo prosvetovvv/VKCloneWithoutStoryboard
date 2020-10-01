@@ -14,7 +14,12 @@
 		E19D4F9B251A062300E1983B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19D4F99251A062300E1983B /* LaunchScreen.storyboard */; };
 		E19D4FA6251A3BA900E1983B /* LoginScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D4FA5251A3BA900E1983B /* LoginScrollView.swift */; };
 		E19D4FA8251A732E00E1983B /* UsersDataStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D4FA7251A732E00E1983B /* UsersDataStackView.swift */; };
-		E19D4FAA2521179300E1983B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D4FA92521179300E1983B /* LoginView.swift */; };
+		E19D4FB02521CDE200E1983B /* MainLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D4FAF2521CDE200E1983B /* MainLoginVC.swift */; };
+		E19D4FB22521CE0000E1983B /* MainLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D4FB12521CDFF00E1983B /* MainLoginView.swift */; };
+		E19D4FB7252208F900E1983B /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D4FB6252208F900E1983B /* Session.swift */; };
+		E19D4FBE2522286600E1983B /* TemporaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D4FBD2522286600E1983B /* TemporaryVC.swift */; };
+		E19D4FC02522288500E1983B /* TemporaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D4FBF2522288500E1983B /* TemporaryView.swift */; };
+		E1F7E60D25237002006A9B4C /* VKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7E60C25237002006A9B4C /* VKManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +32,12 @@
 		E19D4F9C251A062300E1983B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E19D4FA5251A3BA900E1983B /* LoginScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScrollView.swift; sourceTree = "<group>"; };
 		E19D4FA7251A732E00E1983B /* UsersDataStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersDataStackView.swift; sourceTree = "<group>"; };
-		E19D4FA92521179300E1983B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E19D4FAF2521CDE200E1983B /* MainLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLoginVC.swift; sourceTree = "<group>"; };
+		E19D4FB12521CDFF00E1983B /* MainLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLoginView.swift; sourceTree = "<group>"; };
+		E19D4FB6252208F900E1983B /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		E19D4FBD2522286600E1983B /* TemporaryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryVC.swift; sourceTree = "<group>"; };
+		E19D4FBF2522288500E1983B /* TemporaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryView.swift; sourceTree = "<group>"; };
+		E1F7E60C25237002006A9B4C /* VKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +51,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E149224925236656002DF0AF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E19D4F8E251A062100E1983B /* AppDelegate.swift */,
+				E19D4F90251A062100E1983B /* SceneDelegate.swift */,
+				E19D4F97251A062300E1983B /* Assets.xcassets */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
 		E19D4F82251A062100E1983B = {
 			isa = PBXGroup;
 			children = (
@@ -60,12 +80,13 @@
 		E19D4F8D251A062100E1983B /* VKCloneWithoutStoryboard */ = {
 			isa = PBXGroup;
 			children = (
-				E19D4F8E251A062100E1983B /* AppDelegate.swift */,
-				E19D4F90251A062100E1983B /* SceneDelegate.swift */,
+				E19D4FBC252226EC00E1983B /* TemporaryFeature  */,
+				E19D4FB82522225A00E1983B /* LoginVK */,
 				E19D4FA4251A18DE00E1983B /* Login */,
-				E19D4F97251A062300E1983B /* Assets.xcassets */,
+				E19D4FB32521D37700E1983B /* Services */,
 				E19D4F99251A062300E1983B /* LaunchScreen.storyboard */,
 				E19D4F9C251A062300E1983B /* Info.plist */,
+				E149224925236656002DF0AF /* Support Files */,
 			);
 			path = VKCloneWithoutStoryboard;
 			sourceTree = "<group>";
@@ -75,10 +96,36 @@
 			children = (
 				E19D4F92251A062100E1983B /* LoginVC.swift */,
 				E19D4FA5251A3BA900E1983B /* LoginScrollView.swift */,
-				E19D4FA92521179300E1983B /* LoginView.swift */,
 				E19D4FA7251A732E00E1983B /* UsersDataStackView.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		E19D4FB32521D37700E1983B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E1F7E60C25237002006A9B4C /* VKManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E19D4FB82522225A00E1983B /* LoginVK */ = {
+			isa = PBXGroup;
+			children = (
+				E19D4FAF2521CDE200E1983B /* MainLoginVC.swift */,
+				E19D4FB12521CDFF00E1983B /* MainLoginView.swift */,
+				E19D4FB6252208F900E1983B /* Session.swift */,
+			);
+			path = LoginVK;
+			sourceTree = "<group>";
+		};
+		E19D4FBC252226EC00E1983B /* TemporaryFeature  */ = {
+			isa = PBXGroup;
+			children = (
+				E19D4FBD2522286600E1983B /* TemporaryVC.swift */,
+				E19D4FBF2522288500E1983B /* TemporaryView.swift */,
+			);
+			path = "TemporaryFeature ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,12 +198,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E19D4FAA2521179300E1983B /* LoginView.swift in Sources */,
+				E1F7E60D25237002006A9B4C /* VKManager.swift in Sources */,
+				E19D4FB7252208F900E1983B /* Session.swift in Sources */,
 				E19D4FA6251A3BA900E1983B /* LoginScrollView.swift in Sources */,
+				E19D4FB02521CDE200E1983B /* MainLoginVC.swift in Sources */,
 				E19D4F93251A062100E1983B /* LoginVC.swift in Sources */,
+				E19D4FBE2522286600E1983B /* TemporaryVC.swift in Sources */,
 				E19D4F8F251A062100E1983B /* AppDelegate.swift in Sources */,
 				E19D4F91251A062100E1983B /* SceneDelegate.swift in Sources */,
+				E19D4FC02522288500E1983B /* TemporaryView.swift in Sources */,
 				E19D4FA8251A732E00E1983B /* UsersDataStackView.swift in Sources */,
+				E19D4FB22521CE0000E1983B /* MainLoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
