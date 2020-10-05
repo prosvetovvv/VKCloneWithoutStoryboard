@@ -50,6 +50,10 @@ extension MainLoginVC: WKNavigationDelegate {
         let temporaryVC = TemporaryVC()
         present(temporaryVC, animated: true)
         
+//        let tabBar = TabBarController()
+//        tabBar.modalPresentationStyle = .fullScreen
+//        present (tabBar, animated: true)
+        
         decisionHandler(.cancel)
     }
 }
