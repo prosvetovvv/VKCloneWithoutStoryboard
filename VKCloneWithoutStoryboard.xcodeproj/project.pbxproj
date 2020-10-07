@@ -12,6 +12,11 @@
 		E11088BC2527AEFA00F54FF1 /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11088BB2527AEFA00F54FF1 /* GroupsVC.swift */; };
 		E11088BF2527B73000F54FF1 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11088BE2527B73000F54FF1 /* TabBarController.swift */; };
 		E17693C3252B399000D4C500 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17693C2252B399000D4C500 /* Friend.swift */; };
+		E19BC73E252C48A700123D4B /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19BC73D252C48A700123D4B /* FriendsView.swift */; };
+		E19BC741252C5CAA00123D4B /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19BC740252C5CAA00123D4B /* FriendCell.swift */; };
+		E19BC744252CA0D800123D4B /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19BC743252CA0D800123D4B /* ErrorMessage.swift */; };
+		E19BC747252D036600123D4B /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19BC746252D036600123D4B /* AvatarImageView.swift */; };
+		E19BC749252D056A00123D4B /* NameTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19BC748252D056A00123D4B /* NameTitleLabel.swift */; };
 		E19D4F8F251A062100E1983B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D4F8E251A062100E1983B /* AppDelegate.swift */; };
 		E19D4F91251A062100E1983B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D4F90251A062100E1983B /* SceneDelegate.swift */; };
 		E19D4F93251A062100E1983B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D4F92251A062100E1983B /* LoginVC.swift */; };
@@ -22,9 +27,7 @@
 		E19D4FB02521CDE200E1983B /* MainLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D4FAF2521CDE200E1983B /* MainLoginVC.swift */; };
 		E19D4FB22521CE0000E1983B /* MainLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D4FB12521CDFF00E1983B /* MainLoginView.swift */; };
 		E19D4FB7252208F900E1983B /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D4FB6252208F900E1983B /* Session.swift */; };
-		E19D4FBE2522286600E1983B /* TemporaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D4FBD2522286600E1983B /* TemporaryVC.swift */; };
-		E19D4FC02522288500E1983B /* TemporaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19D4FBF2522288500E1983B /* TemporaryView.swift */; };
-		E1F7E60D25237002006A9B4C /* VKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7E60C25237002006A9B4C /* VKManager.swift */; };
+		E1F7E60D25237002006A9B4C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7E60C25237002006A9B4C /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,11 @@
 		E11088BB2527AEFA00F54FF1 /* GroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsVC.swift; sourceTree = "<group>"; };
 		E11088BE2527B73000F54FF1 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		E17693C2252B399000D4C500 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		E19BC73D252C48A700123D4B /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
+		E19BC740252C5CAA00123D4B /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
+		E19BC743252CA0D800123D4B /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		E19BC746252D036600123D4B /* AvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
+		E19BC748252D056A00123D4B /* NameTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTitleLabel.swift; sourceTree = "<group>"; };
 		E19D4F8B251A062100E1983B /* VKCloneWithoutStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKCloneWithoutStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19D4F8E251A062100E1983B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E19D4F90251A062100E1983B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,9 +53,7 @@
 		E19D4FAF2521CDE200E1983B /* MainLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLoginVC.swift; sourceTree = "<group>"; };
 		E19D4FB12521CDFF00E1983B /* MainLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLoginView.swift; sourceTree = "<group>"; };
 		E19D4FB6252208F900E1983B /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
-		E19D4FBD2522286600E1983B /* TemporaryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryVC.swift; sourceTree = "<group>"; };
-		E19D4FBF2522288500E1983B /* TemporaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryView.swift; sourceTree = "<group>"; };
-		E1F7E60C25237002006A9B4C /* VKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKManager.swift; sourceTree = "<group>"; };
+		E1F7E60C25237002006A9B4C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,39 +67,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E11088BD2527B6F200F54FF1 /* TabbarController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TabbarController;
-			sourceTree = "<group>";
-		};
-		E149224925236656002DF0AF /* Support Files */ = {
+		E149224925236656002DF0AF /* Support */ = {
 			isa = PBXGroup;
 			children = (
 				E19D4F8E251A062100E1983B /* AppDelegate.swift */,
 				E19D4F90251A062100E1983B /* SceneDelegate.swift */,
 				E19D4F99251A062300E1983B /* LaunchScreen.storyboard */,
+				E19D4F9C251A062300E1983B /* Info.plist */,
 				E19D4F97251A062300E1983B /* Assets.xcassets */,
 			);
-			path = "Support Files";
+			path = Support;
 			sourceTree = "<group>";
 		};
-		E17693BF252B377F00D4C500 /* Screens */ = {
+		E17693BF252B377F00D4C500 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				E19D4FAF2521CDE200E1983B /* MainLoginVC.swift */,
 				E11088B72527AEBE00F54FF1 /* NewsVC.swift */,
 				E11088B92527AEDB00F54FF1 /* FriendsVC.swift */,
 				E11088BB2527AEFA00F54FF1 /* GroupsVC.swift */,
+				E11088BE2527B73000F54FF1 /* TabBarController.swift */,
 			);
-			path = Screens;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		E17693C0252B392400D4C500 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				E19D4FB12521CDFF00E1983B /* MainLoginView.swift */,
+				E19BC73D252C48A700123D4B /* FriendsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -104,6 +106,33 @@
 				E17693C2252B399000D4C500 /* Friend.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E19BC73F252C5BB600123D4B /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				E19BC745252CEBF300123D4B /* Cells */,
+				E19BC746252D036600123D4B /* AvatarImageView.swift */,
+				E19BC748252D056A00123D4B /* NameTitleLabel.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		E19BC742252CA0AF00123D4B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E19D4FB6252208F900E1983B /* Session.swift */,
+				E19BC743252CA0D800123D4B /* ErrorMessage.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E19BC745252CEBF300123D4B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E19BC740252C5CAA00123D4B /* FriendCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		E19D4F82251A062100E1983B = {
@@ -125,17 +154,14 @@
 		E19D4F8D251A062100E1983B /* VKCloneWithoutStoryboard */ = {
 			isa = PBXGroup;
 			children = (
+				E19BC742252CA0AF00123D4B /* Utilities */,
+				E19BC73F252C5BB600123D4B /* Custom Views */,
 				E17693C1252B397800D4C500 /* Models */,
 				E19D4FB32521D37700E1983B /* Managers */,
-				E17693BF252B377F00D4C500 /* Screens */,
+				E17693BF252B377F00D4C500 /* Controllers */,
 				E17693C0252B392400D4C500 /* Views */,
-				E11088BD2527B6F200F54FF1 /* TabbarController */,
-				E19D4FBC252226EC00E1983B /* TemporaryFeature  */,
 				E19D4FA4251A18DE00E1983B /* LoginOld */,
-				E19D4F9C251A062300E1983B /* Info.plist */,
-				E11088BE2527B73000F54FF1 /* TabBarController.swift */,
-				E19D4FB6252208F900E1983B /* Session.swift */,
-				E149224925236656002DF0AF /* Support Files */,
+				E149224925236656002DF0AF /* Support */,
 			);
 			path = VKCloneWithoutStoryboard;
 			sourceTree = "<group>";
@@ -153,18 +179,9 @@
 		E19D4FB32521D37700E1983B /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				E1F7E60C25237002006A9B4C /* VKManager.swift */,
+				E1F7E60C25237002006A9B4C /* NetworkManager.swift */,
 			);
 			path = Managers;
-			sourceTree = "<group>";
-		};
-		E19D4FBC252226EC00E1983B /* TemporaryFeature  */ = {
-			isa = PBXGroup;
-			children = (
-				E19D4FBD2522286600E1983B /* TemporaryVC.swift */,
-				E19D4FBF2522288500E1983B /* TemporaryView.swift */,
-			);
-			path = "TemporaryFeature ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,18 +254,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1F7E60D25237002006A9B4C /* VKManager.swift in Sources */,
+				E19BC744252CA0D800123D4B /* ErrorMessage.swift in Sources */,
+				E19BC747252D036600123D4B /* AvatarImageView.swift in Sources */,
+				E1F7E60D25237002006A9B4C /* NetworkManager.swift in Sources */,
 				E19D4FB7252208F900E1983B /* Session.swift in Sources */,
 				E19D4FA6251A3BA900E1983B /* LoginScrollView.swift in Sources */,
 				E19D4FB02521CDE200E1983B /* MainLoginVC.swift in Sources */,
 				E11088BC2527AEFA00F54FF1 /* GroupsVC.swift in Sources */,
 				E19D4F93251A062100E1983B /* LoginVC.swift in Sources */,
 				E11088B82527AEBE00F54FF1 /* NewsVC.swift in Sources */,
-				E19D4FBE2522286600E1983B /* TemporaryVC.swift in Sources */,
 				E19D4F8F251A062100E1983B /* AppDelegate.swift in Sources */,
 				E19D4F91251A062100E1983B /* SceneDelegate.swift in Sources */,
-				E19D4FC02522288500E1983B /* TemporaryView.swift in Sources */,
 				E19D4FA8251A732E00E1983B /* UsersDataStackView.swift in Sources */,
+				E19BC73E252C48A700123D4B /* FriendsView.swift in Sources */,
+				E19BC749252D056A00123D4B /* NameTitleLabel.swift in Sources */,
+				E19BC741252C5CAA00123D4B /* FriendCell.swift in Sources */,
 				E11088BA2527AEDB00F54FF1 /* FriendsVC.swift in Sources */,
 				E11088BF2527B73000F54FF1 /* TabBarController.swift in Sources */,
 				E19D4FB22521CE0000E1983B /* MainLoginView.swift in Sources */,
@@ -390,7 +410,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7U5XZ95AHH;
-				INFOPLIST_FILE = VKCloneWithoutStoryboard/Info.plist;
+				INFOPLIST_FILE = VKCloneWithoutStoryboard/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -408,7 +428,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7U5XZ95AHH;
-				INFOPLIST_FILE = VKCloneWithoutStoryboard/Info.plist;
+				INFOPLIST_FILE = VKCloneWithoutStoryboard/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

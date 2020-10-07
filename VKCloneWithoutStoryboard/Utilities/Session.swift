@@ -13,7 +13,7 @@ class Session {
     let password = "password"
     var token = ""
     
-    static let instance = Session()
+    static let shared = Session()
     
     private init() {}
 }
