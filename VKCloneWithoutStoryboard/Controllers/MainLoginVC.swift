@@ -11,21 +11,27 @@ import WebKit
 
 class MainLoginVC: UIViewController {
     
-    let mainLoginView = MainLoginView()
-    let session = Session.instance
-    
+    let rootView = MainLoginView()
     
     override func loadView() {
         super.loadView()
-        
-        view = mainLoginView
-        mainLoginView.navigationDelegate = self
+        view = rootView
+    }
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setRootViewDelegate()
+    }
+    
+    
+    func setRootViewDelegate() {
+        rootView.navigationDelegate = self
     }
 }
 
 extension MainLoginVC: WKNavigationDelegate {
     func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
-        
         guard let url = navigationResponse.response.url, url.path == "/blank.html", let fragment = url.fragment  else {
             decisionHandler(.allow)
             return
@@ -45,14 +51,11 @@ extension MainLoginVC: WKNavigationDelegate {
         let token = params["access_token"]
         
         guard token != nil else { return }
-        session.token = token ?? " "
-        
-        let temporaryVC = TemporaryVC()
-        present(temporaryVC, animated: true)
-        
-//        let tabBar = TabBarController()
-//        tabBar.modalPresentationStyle = .fullScreen
-//        present (tabBar, animated: true)
+        Session.shared.token = token ?? " "
+                
+        let tabBar = TabBarController()
+        tabBar.modalPresentationStyle = .fullScreen
+        present (tabBar, animated: true)
         
         decisionHandler(.cancel)
     }
